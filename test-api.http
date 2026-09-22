@@ -1,0 +1,1513 @@
+POST http://localhost:8081/api/users/register
+Content-Type: application/json
+
+{
+    "name": "Test User",
+    "email": "testuser@gmail.com",
+    "password": "123456"
+}
+
+### Create Quiz
+POST http://localhost:8081/api/quizzes
+Content-Type: application/json
+
+{
+    "title": "Java Basics",
+    "description": "A basic quiz to test Java programming knowledge"
+}
+
+### Create Question
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to create a class in Java?",
+    "optionA": "function",
+    "optionB": "class",
+    "optionC": "define",
+    "optionD": "create",
+    "correctAnswer": "B",
+    "quiz": {
+        "id": 1
+    }
+}
+
+### Get Questions for Quiz
+GET http://localhost:8081/api/questions/quiz/1
+
+### Create Java Quiz
+POST http://localhost:8081/api/quizzes
+Content-Type: application/json
+
+{
+    "title": "Java",
+    "description": "20 questions on Java programming"
+}
+
+### Create Python Quiz
+POST http://localhost:8081/api/quizzes
+Content-Type: application/json
+
+{
+    "title": "Python",
+    "description": "20 questions on Python programming"
+}
+
+### Create C Quiz
+POST http://localhost:8081/api/quizzes
+Content-Type: application/json
+
+{
+    "title": "C",
+    "description": "20 questions on C programming"
+}
+
+### Create C++ Quiz
+POST http://localhost:8081/api/quizzes
+Content-Type: application/json
+
+{
+    "title": "C++",
+    "description": "20 questions on C++ programming"
+}
+
+### Create HTML + CSS + JAVASCRIPT Quiz
+POST http://localhost:8081/api/quizzes
+Content-Type: application/json
+
+{
+    "title": "HTML + CSS + JAVASCRIPT",
+    "description": "20 questions on HTML CSS JAVASCRIPT"
+}
+### Java Question 1
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to create a class in Java?",
+    "optionA": "function",
+    "optionB": "class",
+    "optionC": "define",
+    "optionD": "create",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 2
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which method is the starting point of a Java program?",
+    "optionA": "start()",
+    "optionB": "main()",
+    "optionC": "run()",
+    "optionD": "execute()",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 3
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which data type is used to store whole numbers?",
+    "optionA": "float",
+    "optionB": "char",
+    "optionC": "int",
+    "optionD": "boolean",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 4
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which symbol is used to end a statement in Java?",
+    "optionA": ".",
+    "optionB": ":",
+    "optionC": ";",
+    "optionD": ",",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 5
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used for inheritance in Java?",
+    "optionA": "implements",
+    "optionB": "extends",
+    "optionC": "inherits",
+    "optionD": "super",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 6
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to create an object?",
+    "optionA": "object",
+    "optionB": "new",
+    "optionC": "create",
+    "optionD": "this",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 7
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which language feature allows the same method name with different parameters?",
+    "optionA": "Inheritance",
+    "optionB": "Encapsulation",
+    "optionC": "Method overloading",
+    "optionD": "Abstraction",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 8
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to define a constant variable?",
+    "optionA": "const",
+    "optionB": "static",
+    "optionC": "final",
+    "optionD": "constant",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 9
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which package contains the Scanner class?",
+    "optionA": "java.io",
+    "optionB": "java.util",
+    "optionC": "java.lang",
+    "optionD": "java.net",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 10
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword refers to the current object?",
+    "optionA": "self",
+    "optionB": "current",
+    "optionC": "this",
+    "optionD": "object",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 11
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which loop executes its body at least once?",
+    "optionA": "for",
+    "optionB": "while",
+    "optionC": "do-while",
+    "optionD": "foreach",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 12
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to handle exceptions?",
+    "optionA": "try",
+    "optionB": "check",
+    "optionC": "error",
+    "optionD": "handle",
+    "correctAnswer": "A",
+    "quiz": {"id": 2}
+}
+
+### Java Question 13
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which concept hides internal implementation details?",
+    "optionA": "Inheritance",
+    "optionB": "Abstraction",
+    "optionC": "Overloading",
+    "optionD": "Compilation",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 14
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to create a subclass?",
+    "optionA": "extends",
+    "optionB": "inherits",
+    "optionC": "child",
+    "optionD": "super",
+    "correctAnswer": "A",
+    "quiz": {"id": 2}
+}
+
+### Java Question 15
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which of these is not a primitive data type in Java?",
+    "optionA": "int",
+    "optionB": "double",
+    "optionC": "String",
+    "optionD": "boolean",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 16
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to stop a loop?",
+    "optionA": "stop",
+    "optionB": "exit",
+    "optionC": "break",
+    "optionD": "return",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 17
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword skips the current loop iteration?",
+    "optionA": "skip",
+    "optionB": "continue",
+    "optionC": "next",
+    "optionD": "pass",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 18
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which collection stores elements as key-value pairs?",
+    "optionA": "ArrayList",
+    "optionB": "HashSet",
+    "optionC": "HashMap",
+    "optionD": "Queue",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Java Question 19
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to define an interface implementation?",
+    "optionA": "extends",
+    "optionB": "implements",
+    "optionC": "interface",
+    "optionD": "inherit",
+    "correctAnswer": "B",
+    "quiz": {"id": 2}
+}
+
+### Java Question 20
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which class is the parent of all Java classes?",
+    "optionA": "Main",
+    "optionB": "Class",
+    "optionC": "Object",
+    "optionD": "Parent",
+    "correctAnswer": "C",
+    "quiz": {"id": 2}
+}
+
+### Get Java Questions
+GET http://localhost:8081/api/questions/quiz/2
+
+### Python Question 1
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to define a function in Python?",
+    "optionA": "function",
+    "optionB": "def",
+    "optionC": "fun",
+    "optionD": "define",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 2
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which symbol is used for comments in Python?",
+    "optionA": "//",
+    "optionB": "/*",
+    "optionC": "#",
+    "optionD": "--",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 3
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which data type is used to store True or False?",
+    "optionA": "int",
+    "optionB": "str",
+    "optionC": "bool",
+    "optionD": "float",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 4
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function is used to display output in Python?",
+    "optionA": "display()",
+    "optionB": "print()",
+    "optionC": "output()",
+    "optionD": "show()",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 5
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function is used to get input from the user?",
+    "optionA": "get()",
+    "optionB": "read()",
+    "optionC": "input()",
+    "optionD": "scan()",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 6
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which of these is a Python list?",
+    "optionA": "(1, 2, 3)",
+    "optionB": "[1, 2, 3]",
+    "optionC": "{1, 2, 3}",
+    "optionD": "<1, 2, 3>",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 7
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which collection stores key-value pairs in Python?",
+    "optionA": "List",
+    "optionB": "Tuple",
+    "optionC": "Dictionary",
+    "optionD": "Set",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 8
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used for a loop over a sequence?",
+    "optionA": "loop",
+    "optionB": "for",
+    "optionC": "repeat",
+    "optionD": "foreach",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 9
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to handle exceptions?",
+    "optionA": "catch",
+    "optionB": "error",
+    "optionC": "try",
+    "optionD": "handle",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 10
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which operator is used for exponentiation in Python?",
+    "optionA": "^",
+    "optionB": "**",
+    "optionC": "//",
+    "optionD": "%%",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 11
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to create a class?",
+    "optionA": "class",
+    "optionB": "struct",
+    "optionC": "object",
+    "optionD": "define",
+    "correctAnswer": "A",
+    "quiz": {"id": 3}
+}
+
+### Python Question 12
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which method adds an item to the end of a list?",
+    "optionA": "add()",
+    "optionB": "insert()",
+    "optionC": "append()",
+    "optionD": "push()",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 13
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function returns the length of a list?",
+    "optionA": "size()",
+    "optionB": "length()",
+    "optionC": "count()",
+    "optionD": "len()",
+    "correctAnswer": "D",
+    "quiz": {"id": 3}
+}
+
+### Python Question 14
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which type of brackets are used for tuples?",
+    "optionA": "[]",
+    "optionB": "{}",
+    "optionC": "()",
+    "optionD": "<>",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 15
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to create a loop that continues while a condition is true?",
+    "optionA": "for",
+    "optionB": "while",
+    "optionC": "during",
+    "optionD": "repeat",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 16
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to stop a loop?",
+    "optionA": "stop",
+    "optionB": "exit",
+    "optionC": "break",
+    "optionD": "end",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 17
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword skips the current iteration of a loop?",
+    "optionA": "skip",
+    "optionB": "continue",
+    "optionC": "next",
+    "optionD": "pass",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 18
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used when a statement does nothing?",
+    "optionA": "skip",
+    "optionB": "empty",
+    "optionC": "pass",
+    "optionD": "null",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Python Question 19
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function converts a value to an integer?",
+    "optionA": "integer()",
+    "optionB": "int()",
+    "optionC": "number()",
+    "optionD": "convert()",
+    "correctAnswer": "B",
+    "quiz": {"id": 3}
+}
+
+### Python Question 20
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which programming language is Python mainly known for being?",
+    "optionA": "Low-level",
+    "optionB": "Assembly",
+    "optionC": "High-level",
+    "optionD": "Machine language",
+    "correctAnswer": "C",
+    "quiz": {"id": 3}
+}
+
+### Get Python Questions
+GET http://localhost:8081/api/questions/quiz/3
+
+### C Question 1
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function is the starting point of a C program?",
+    "optionA": "start()",
+    "optionB": "main()",
+    "optionC": "begin()",
+    "optionD": "run()",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 2
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which symbol is used to end a statement in C?",
+    "optionA": ".",
+    "optionB": ":",
+    "optionC": ";",
+    "optionD": ",",
+    "correctAnswer": "C",
+    "quiz": {"id": 4}
+}
+
+### C Question 3
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which data type is used to store a single character?",
+    "optionA": "char",
+    "optionB": "string",
+    "optionC": "character",
+    "optionD": "text",
+    "correctAnswer": "A",
+    "quiz": {"id": 4}
+}
+
+### C Question 4
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which header file is required for printf()?",
+    "optionA": "stdlib.h",
+    "optionB": "stdio.h",
+    "optionC": "string.h",
+    "optionD": "math.h",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 5
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which operator is used to get the address of a variable?",
+    "optionA": "*",
+    "optionB": "&",
+    "optionC": "#",
+    "optionD": "@",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 6
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which operator is used to access the value stored at a pointer address?",
+    "optionA": "&",
+    "optionB": "*",
+    "optionC": "#",
+    "optionD": "%",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 7
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which loop is commonly used when the number of iterations is known?",
+    "optionA": "if",
+    "optionB": "for",
+    "optionC": "switch",
+    "optionD": "goto",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 8
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which statement is used to make a decision in C?",
+    "optionA": "if",
+    "optionB": "loop",
+    "optionC": "repeat",
+    "optionD": "select",
+    "correctAnswer": "A",
+    "quiz": {"id": 4}
+}
+
+### C Question 9
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to define a constant in C?",
+    "optionA": "constant",
+    "optionB": "const",
+    "optionC": "final",
+    "optionD": "static",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 10
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function is used to read formatted input in C?",
+    "optionA": "input()",
+    "optionB": "read()",
+    "optionC": "scanf()",
+    "optionD": "getinput()",
+    "correctAnswer": "C",
+    "quiz": {"id": 4}
+}
+
+### C Question 11
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to exit from a loop?",
+    "optionA": "exit",
+    "optionB": "stop",
+    "optionC": "break",
+    "optionD": "end",
+    "correctAnswer": "C",
+    "quiz": {"id": 4}
+}
+
+### C Question 12
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword skips the current iteration of a loop?",
+    "optionA": "skip",
+    "optionB": "continue",
+    "optionC": "next",
+    "optionD": "pass",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 13
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which data type is commonly used to store decimal numbers?",
+    "optionA": "int",
+    "optionB": "char",
+    "optionC": "float",
+    "optionD": "void",
+    "correctAnswer": "C",
+    "quiz": {"id": 4}
+}
+
+### C Question 14
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which symbol is used for a single-line comment in C?",
+    "optionA": "//",
+    "optionB": "#",
+    "optionC": "--",
+    "optionD": "**",
+    "correctAnswer": "A",
+    "quiz": {"id": 4}
+}
+
+### C Question 15
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function is used to find the length of a string?",
+    "optionA": "length()",
+    "optionB": "strlen()",
+    "optionC": "strlength()",
+    "optionD": "size()",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 16
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which header file contains string functions?",
+    "optionA": "stdio.h",
+    "optionB": "stdlib.h",
+    "optionC": "string.h",
+    "optionD": "math.h",
+    "correctAnswer": "C",
+    "quiz": {"id": 4}
+}
+
+### C Question 17
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "What is an array?",
+    "optionA": "Collection of similar data types",
+    "optionB": "A function",
+    "optionC": "A keyword",
+    "optionD": "A pointer only",
+    "correctAnswer": "A",
+    "quiz": {"id": 4}
+}
+
+### C Question 18
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to return a value from a function?",
+    "optionA": "send",
+    "optionB": "return",
+    "optionC": "output",
+    "optionD": "value",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 19
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which operator is used for logical AND?",
+    "optionA": "&",
+    "optionB": "&&",
+    "optionC": "||",
+    "optionD": "!",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### C Question 20
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to define a structure in C?",
+    "optionA": "structure",
+    "optionB": "struct",
+    "optionC": "record",
+    "optionD": "class",
+    "correctAnswer": "B",
+    "quiz": {"id": 4}
+}
+
+### Get C Questions
+GET http://localhost:8081/api/questions/quiz/4
+
+### C++ Question 1
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to define a class in C++?",
+    "optionA": "class",
+    "optionB": "struct",
+    "optionC": "object",
+    "optionD": "define",
+    "correctAnswer": "A",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 2
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which function is the entry point of a C++ program?",
+    "optionA": "start()",
+    "optionB": "main()",
+    "optionC": "run()",
+    "optionD": "begin()",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 3
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which operator is used to access members of an object?",
+    "optionA": "->",
+    "optionB": ".",
+    "optionC": "::",
+    "optionD": "&",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 4
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which concept allows a class to inherit properties from another class?",
+    "optionA": "Encapsulation",
+    "optionB": "Inheritance",
+    "optionC": "Polymorphism",
+    "optionD": "Abstraction",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 5
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which symbol is used to declare a pointer?",
+    "optionA": "&",
+    "optionB": "*",
+    "optionC": "#",
+    "optionD": "@",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 6
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which operator is used to get the address of a variable?",
+    "optionA": "*",
+    "optionB": "&",
+    "optionC": "->",
+    "optionD": "::",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 7
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which feature allows the same function name with different parameters?",
+    "optionA": "Inheritance",
+    "optionB": "Function overloading",
+    "optionC": "Abstraction",
+    "optionD": "Encapsulation",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 8
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to create an object dynamically?",
+    "optionA": "create",
+    "optionB": "new",
+    "optionC": "object",
+    "optionD": "malloc",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 9
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to release dynamically allocated memory?",
+    "optionA": "free",
+    "optionB": "delete",
+    "optionC": "remove",
+    "optionD": "clear",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 10
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which header file is commonly used for cout and cin?",
+    "optionA": "stdio.h",
+    "optionB": "iostream",
+    "optionC": "string.h",
+    "optionD": "stdlib.h",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 11
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which object is used for standard output in C++?",
+    "optionA": "cin",
+    "optionB": "cout",
+    "optionC": "print",
+    "optionD": "output",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 12
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which object is used for standard input in C++?",
+    "optionA": "input",
+    "optionB": "scanf",
+    "optionC": "cin",
+    "optionD": "read",
+    "correctAnswer": "C",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 13
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to define a constant variable?",
+    "optionA": "constant",
+    "optionB": "const",
+    "optionC": "final",
+    "optionD": "static",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 14
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which access specifier makes members accessible from anywhere?",
+    "optionA": "private",
+    "optionB": "protected",
+    "optionC": "public",
+    "optionD": "global",
+    "correctAnswer": "C",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 15
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which access specifier allows access only within the class?",
+    "optionA": "public",
+    "optionB": "private",
+    "optionC": "protected",
+    "optionD": "internal",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 16
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which concept means one interface can have multiple forms?",
+    "optionA": "Inheritance",
+    "optionB": "Polymorphism",
+    "optionC": "Encapsulation",
+    "optionD": "Compilation",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 17
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which special function is called automatically when an object is created?",
+    "optionA": "Destructor",
+    "optionB": "Constructor",
+    "optionC": "Main",
+    "optionD": "Initializer",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 18
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which special function is called when an object is destroyed?",
+    "optionA": "Constructor",
+    "optionB": "Destructor",
+    "optionC": "Delete",
+    "optionD": "Destroy",
+    "correctAnswer": "B",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 19
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which operator is used for scope resolution in C++?",
+    "optionA": ".",
+    "optionB": "->",
+    "optionC": "::",
+    "optionD": ":",
+    "correctAnswer": "C",
+    "quiz": {"id": 5}
+}
+
+### C++ Question 20
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which container stores elements in a dynamic array?",
+    "optionA": "vector",
+    "optionB": "stack",
+    "optionC": "queue",
+    "optionD": "map",
+    "correctAnswer": "A",
+    "quiz": {"id": 5}
+}
+
+### Get C++ Questions
+GET http://localhost:8081/api/questions/quiz/5
+
+### HTML CSS JavaScript Question 1
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "What does HTML stand for?",
+    "optionA": "Hyper Text Markup Language",
+    "optionB": "High Text Machine Language",
+    "optionC": "Hyperlink Text Management Language",
+    "optionD": "Home Tool Markup Language",
+    "correctAnswer": "A",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 2
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which HTML tag is used to create a paragraph?",
+    "optionA": "<h1>",
+    "optionB": "<p>",
+    "optionC": "<para>",
+    "optionD": "<text>",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 3
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which HTML tag is used to create a hyperlink?",
+    "optionA": "<link>",
+    "optionB": "<a>",
+    "optionC": "<href>",
+    "optionD": "<url>",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 4
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which HTML tag is used to display an image?",
+    "optionA": "<image>",
+    "optionB": "<img>",
+    "optionC": "<picture>",
+    "optionD": "<src>",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 5
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "What does CSS stand for?",
+    "optionA": "Computer Style Sheets",
+    "optionB": "Creative Style System",
+    "optionC": "Cascading Style Sheets",
+    "optionD": "Colorful Style Sheets",
+    "correctAnswer": "C",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 6
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which CSS property is used to change text color?",
+    "optionA": "font-color",
+    "optionB": "text-color",
+    "optionC": "color",
+    "optionD": "foreground",
+    "correctAnswer": "C",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 7
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which CSS property is used to change the background color?",
+    "optionA": "background-color",
+    "optionB": "bgcolor",
+    "optionC": "background",
+    "optionD": "color-background",
+    "correctAnswer": "A",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 8
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which CSS property is used to change the font size?",
+    "optionA": "text-size",
+    "optionB": "font-size",
+    "optionC": "size",
+    "optionD": "font-style",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 9
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which HTML tag is used for the largest heading?",
+    "optionA": "<heading>",
+    "optionB": "<h6>",
+    "optionC": "<h1>",
+    "optionD": "<head>",
+    "correctAnswer": "C",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 10
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Where is JavaScript commonly placed in an HTML document?",
+    "optionA": "<script>",
+    "optionB": "<javascript>",
+    "optionC": "<js>",
+    "optionD": "<code>",
+    "correctAnswer": "A",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 11
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword is used to declare a variable in JavaScript?",
+    "optionA": "variable",
+    "optionB": "var",
+    "optionC": "declare",
+    "optionD": "letvar",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 12
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which keyword can also be used to declare a variable in modern JavaScript?",
+    "optionA": "let",
+    "optionB": "variable",
+    "optionC": "define",
+    "optionD": "int",
+    "correctAnswer": "A",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 13
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which method is used to display a message in the browser console?",
+    "optionA": "print()",
+    "optionB": "console.log()",
+    "optionC": "display()",
+    "optionD": "writeConsole()",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 14
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which JavaScript symbol is used for strict equality?",
+    "optionA": "==",
+    "optionB": "=",
+    "optionC": "===",
+    "optionD": "!=",
+    "correctAnswer": "C",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 15
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which HTML tag is used to create an unordered list?",
+    "optionA": "<ol>",
+    "optionB": "<list>",
+    "optionC": "<ul>",
+    "optionD": "<li>",
+    "correctAnswer": "C",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 16
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which CSS property is used to make text bold?",
+    "optionA": "font-weight",
+    "optionB": "font-bold",
+    "optionC": "text-bold",
+    "optionD": "bold",
+    "correctAnswer": "A",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 17
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which CSS property is used to add space inside an element?",
+    "optionA": "margin",
+    "optionB": "padding",
+    "optionC": "spacing",
+    "optionD": "border-space",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 18
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which CSS property is used to add space outside an element?",
+    "optionA": "padding",
+    "optionB": "margin",
+    "optionC": "spacing",
+    "optionD": "outside",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 19
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which JavaScript method selects an element by its ID?",
+    "optionA": "getElementById()",
+    "optionB": "getById()",
+    "optionC": "selectId()",
+    "optionD": "findId()",
+    "correctAnswer": "A",
+    "quiz": {"id": 6}
+}
+
+### HTML CSS JavaScript Question 20
+POST http://localhost:8081/api/questions
+Content-Type: application/json
+
+{
+    "questionText": "Which HTML element is used to create a button?",
+    "optionA": "<click>",
+    "optionB": "<button>",
+    "optionC": "<btn>",
+    "optionD": "<inputbutton>",
+    "correctAnswer": "B",
+    "quiz": {"id": 6}
+}
+
+### Get HTML CSS JavaScript Questions
+GET http://localhost:8081/api/questions/quiz/6
+
+### Get All Quiz Categories
+GET http://localhost:8081/api/quizzes
+
+### Get Java Questions
+GET http://localhost:8081/api/questions/quiz/2
+
+### Get Python Questions
+GET http://localhost:8081/api/questions/quiz/3
+
+### Get C Questions
+GET http://localhost:8081/api/questions/quiz/4
+
+### Get C++ Questions
+GET http://localhost:8081/api/questions/quiz/5
+
+### Get HTML CSS JavaScript Questions
+GET http://localhost:8081/api/questions/quiz/6
